@@ -1,0 +1,192 @@
+/* @import url("./utility.css"); */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* background color */
+body{
+    background-color: black;
+
+}
+
+
+/* Calculator styling */
+
+.calWrapper{
+    /* border: 2px solid red; */
+    border-radius: 25px;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+#cal{
+    /* border: 2px solid greenyellow; */
+    border-radius: 25px;
+    height: 90vh;
+    width: 40%;
+    background: linear-gradient(to right,red, greenyellow,blue,cyan);
+    
+}
+
+#cal input{
+    width: 90%;
+    height: 10%;
+    border-radius: 8px;
+    font-size: xxx-large;
+    background-color: rgb(74, 74, 74);
+    color: aliceblue;
+    text-align: right;
+    padding: 0 10%;
+   
+}
+
+#cal input::placeholder{
+    /* color: darkgray; */
+    font-size: x-large;
+    text-align: center;
+
+}
+
+#cal img{
+    height: 10%;
+    /* border: 2px solid; */
+}
+
+
+.dispWrap{
+    /* border: 2px solid red; */
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex direction */
+    flex-direction: column;
+}
+
+/* Number pad */
+.numPad{
+    /* border: 2px solid white; */
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    /* grid-template-rows: 20% 20% 20% 20%; */
+    justify-content: space-around;
+    row-gap: 1%;
+    column-gap: 1%;
+    justify-content: center;
+    
+}
+
+
+.btn{
+    border-radius: 50%;
+    /* width: 20%; */
+    background-color: gray;
+    border-style:inset;
+    border-width: 10px;
+    font-size: xxx-large;
+    font-weight: 700;
+    color: black;
+}
+
+.clearBtn{
+    font-size: small;
+}
+
+
+/* Responsivness */
+
+@media (max-width:829px){
+    #cal{
+        /* border: 2px solid greenyellow; */
+        border-radius: 25px;
+        height: 90vh;
+        width: 50%;
+        background: linear-gradient(to right,red, greenyellow,blue,cyan);
+        
+    }
+}
+
+
+@media (max-width:729px){
+    #cal{
+        /* border: 2px solid greenyellow; */
+        border-radius: 25px;
+        height: 90vh;
+        width: 62%;
+        background: linear-gradient(to right,red, greenyellow,blue,cyan);
+        
+    }
+}
+
+
+@media (max-width:629px){
+    #cal{
+        /* border: 2px solid greenyellow; */
+        border-radius: 25px;
+        height: 90vh;
+        width: 90%;
+        background: linear-gradient(to right,red, greenyellow,blue,cyan);
+        
+    }
+}
+
+@media (max-width:529px){
+    #cal{
+        /* border: 2px solid greenyellow; */
+        border-radius: 25px;
+        height: 90vh;
+        width: 98%;
+        background: linear-gradient(to right,red, greenyellow,blue,cyan);
+        
+    }
+}
+
+@media (min-width:229px) and (max-width:528px) {
+    #cal{
+        /* border: 2px solid greenyellow; */
+        border-radius: 25px;
+        height: 90vh;
+        width: 97%;
+        background: linear-gradient(to right,red, greenyellow,blue,cyan);
+        
+    }
+}
+
+@media (min-width:430px){
+    .numPad{
+        /* border: 2px solid white; */
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        /* grid-template-rows: 20% 20% 20% 20%; */
+        justify-content: space-around;
+        row-gap: 1%;
+        column-gap: 5%;
+        justify-content: center;
+        
+    }
+
+    .btn{
+        border-radius: 50%;
+        width: 100%;
+        background-color: gray;
+        border-style:inset;
+        border-width: 10px;
+        font-size: xxx-large;
+        font-weight: 700;
+        color: black;
+    }
+}
+

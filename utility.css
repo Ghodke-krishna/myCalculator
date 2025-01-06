@@ -1,0 +1,68 @@
+/* Display flex classes */
+
+.flex{
+    display: flex;
+}
+
+/* justify-content */
+.jc-cen{
+    justify-content: center;
+}
+
+.jc-Start{
+    justify-content: flex-start;
+}
+
+.jc-End{
+    justify-content: flex-end;
+}
+
+.jc-sArnd{
+    justify-content: space-around;
+}
+
+.jc-sBtwn{
+    justify-content: space-between;
+}
+
+.jc-sEven{
+    justify-content: space-evenly;
+}
+
+
+
+/* align-items */
+
+.ai-start{
+    align-items: flex-start;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.ai-end{
+    align-items: flex-end;
+}
+
+
+
+/* Grid classes */
+
+.grid{
+    display: grid;
+}
+
+/* align-content */
+
+.ac-start{
+    align-content: flex-start;
+}
+
+.ac-center{
+    align-content: center;
+}
+
+.ac-end{
+    align-content: flex-end;
+}
